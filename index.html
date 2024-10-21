@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro-Get</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="logo.png" alt="Logo" />
+      <h1>PRO-GET</h1>
+      <div class="search">
+        <input type="search" placeholder="Search" />
+        <button>Search</button>
+      </div>
+    </header>
+
+    <div class="main">
+      <h2>Get Instant Links to Professional Services!</h2>
+    </div>
+
+    <form class="form">
+      <input type="email" placeholder="Enter email address" required />
+      <input type="password" placeholder="Password" required />
+      <input type="tel" placeholder="Phone number" required />
+      <input type="number" placeholder="Age" required />
+      <input type="text" placeholder="Location" required />
+      <select required>
+        <option value="">Select profession(s)</option>
+        <option value="Plumber">Plumber</option>
+        <option value="Electrician">Electrician</option>
+        <option value="Mechanic">Mechanic</option>
+        <!-- Add more professions as needed -->
+      </select>
+      <input type="file" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="professional-profiles">
+      <!-- Profiles will be added here dynamically -->
+    </div>
+
+    <div class="footer">
+      <button class="hire">Hire</button>
+      <button>Facebook Login</button>
+    </div>
+  </div>
+
+  <script src="pro-get.js"></script>
+</body>
+</html>
