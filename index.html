@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pro-Get</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro-Get App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
     <header>
-      <img src="logo.png" alt="Logo" />
-      <h1>PRO-GET</h1>
-      <div class="search">
-        <input type="search" placeholder="Search" />
-        <button>Search</button>
-      </div>
+        <h1>Pro-Get</h1>
+        <p>Get Linked to Professional Services</p>
     </header>
 
-    <div class="main">
-      <h2>Get Instant Links to Professional Services!</h2>
+    <main>
+        <div id="auth-container">
+            <h2 id="auth-title">Login</h2>
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button onclick="login()">Login</button>
+            <button onclick="showRegistration()">Register</button>
+        </div>
+
+        <div id="registration-container" style="display: none;">
+            <h2>Register</h2>
+            <input type="text" id="reg-username" placeholder="Username" required>
+            <input type="password" id="reg-password" placeholder="Password" required>
+            <button onclick="register()">Register</button>
+            <button onclick="showLogin()">Back to Login</button>
+        </div>
+
+        <h2>Available Professionals</h2>
+        <input type="text" id="search-bar" placeholder="Search for professionals..." onkeyup="filterProfessionals()">
+        <div id="professional-list"></div>
+
+        <h3>Your Selected Professionals</h3>
+        <div id="selected-professionals"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pro-Get App</p>
+    </footer>
+
+    <!-- Professional Details Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-field"></p>
+            <p id="modal-phone"></p>
+            <p id="modal-email"></p>
+            <p id="modal-location"></p>
+            <button id="update-button" onclick="updateProfessional()">Update Details</button>
+        </div>
     </div>
 
-    <form class="form">
-      <input type="email" placeholder="Enter email address" required />
-      <input type="password" placeholder="Password" required />
-      <input type="tel" placeholder="Phone number" required />
-      <input type="number" placeholder="Age" required />
-      <input type="text" placeholder="Location" required />
-      <select required>
-        <option value="">Select profession(s)</option>
-        <option value="Plumber">Plumber</option>
-        <option value="Electrician">Electrician</option>
-        <option value="Mechanic">Mechanic</option>
-        <!-- Add more professions as needed -->
-      </select>
-      <input type="file" required />
-      <button type="submit">Submit</button>
-    </form>
-
-    <div class="professional-profiles">
-      <!-- Profiles will be added here dynamically -->
-    </div>
-
-    <div class="footer">
-      <button class="hire">Hire</button>
-      <button>Facebook Login</button>
-    </div>
-  </div>
-
-  <script src="pro-get.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

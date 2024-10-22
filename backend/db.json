@@ -1,0 +1,84 @@
+{
+  "professionals": [
+    {
+      "id": "1",
+      "name": "Aston Martin",
+      "field": "Plumber",
+      "phone": "0712345678",
+      "email": "astonmartin@gmail.com",
+      "location": "Nairobi"
+    },
+    {
+      "id": "2",
+      "name": "Janet Gray",
+      "field": "Electrician",
+      "phone": "020-4321",
+      "email": "janet.gray@gmail.com.com",
+      "location": "Los Angeles"
+    },
+    {
+      "id": "3",
+      "name": "Samuel Onyancha",
+      "field": "Mechanic",
+      "phone": "020-9876",
+      "email": "samuel.onyancha@gmail.com",
+      "location": "Ikolomani"
+    },
+    {
+      "id": "4",
+      "name": "Merovinjan Blake",
+      "field": "Accountant",
+      "phone": "020-7654",
+      "email": "merovinjan.blake@gmail.com",
+      "location": "Las Vegas"
+    },
+    {
+      "id": "5",
+      "name": "Michael Scofield",
+      "field": "Doctor",
+      "phone": "020-9863",
+      "email": "michael.scofield@gmail.com",
+      "location": "San Antonio"
+    },
+    {
+      "id": "6",
+      "name": "Black Widow",
+      "field": "Teacher",
+      "phone": "020-6382",
+      "email": "blackwidow@gmail.com",
+      "location": "Mashuru"
+    },
+    {
+      "id": "7",
+      "name": "David Kabaka",
+      "field": "Engineer",
+      "phone": "020-8234",
+      "email": "davidkabaka@.com",
+      "location": "Denver"
+    },
+    {
+      "id": "8",
+      "name": "Thomas Shelby",
+      "field": "Landscaper",
+      "phone": "020-0123",
+      "email": "thomasshelby@gmail.com",
+      "location": "Miami"
+    },
+    {
+      "id": "9",
+      "name": "James Gakuru",
+      "field": "Mason",
+      "phone": "0710787044",
+      "email": "jame.gakuru@gmail.com",
+      "location": "Nkubu"
+    },
+    {
+      "id": "10",
+      "name": "Rick Ross",
+      "field": "House-Help",
+      "phone": "020-6473",
+      "email": "rickross@gmail.com",
+      "location": "Mombasa"
+    }
+  ]
+}
