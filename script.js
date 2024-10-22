@@ -26,7 +26,7 @@ function loadSelections() {
 
 // Fetch professionals from the JSON server
 async function fetchProfessionals() {
-    const response = await fetch('http://localhost:3000/professionals');
+    const response = await fetch('https://project1-6c51.onrender.com/professionals');
     allProfessionals = await response.json(); // Store all professionals for searching
     displayProfessionals(allProfessionals);
 }
@@ -58,7 +58,7 @@ function filterProfessionals() {
 
 // Open the modal to display professional details
 async function openModal(id) {
-    const response = await fetch(`http://localhost:3000/professionals/${id}`);
+    const response = await fetch(`https://project1-6c51.onrender.com/professionals/${id}`);
     const prof = await response.json();
 
     currentProfessionalId = prof.id; // Set the ID for updating
@@ -117,7 +117,7 @@ async function updateProfessional() {
         email: newEmail
     };
 
-    await fetch(`http://localhost:3000/professionals/${currentProfessionalId}`, {
+    await fetch(`https://project1-6c51.onrender.com/professionals/${currentProfessionalId}`, {
         method: 'PATCH',
         headers: {
             'Content-Type': 'application/json'
