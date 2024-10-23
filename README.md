@@ -33,3 +33,6 @@
 ## Implement an add to add comment section on each professional’s profile as well as a five-star rating system for each professional in the application based on user response to the specific professional’s service.
 
 ## license% Copyright 2024 Pro-Get App
+
+## My Render Link: https://dashboard.render.com/
+##My Github deployed link: evanskabiru.github.io/project1/ 
